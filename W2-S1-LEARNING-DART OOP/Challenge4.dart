@@ -12,6 +12,11 @@ double get kms=> _distance;
 double get ms=> _distance*1000;
 double get cms=> _distance*10000;
 
+
+  Distance operator +(covariant  Distance d) {
+    return Distance.kms(this._distance + d._distance);
+  }
+}
 void main() {
   Distance d1 = new Distance.kms(3.4);
   Distance d2 = new Distance.ms(1000);
