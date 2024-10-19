@@ -22,5 +22,9 @@ void main() {
   Distance d2 = new Distance.ms(1000);
     var totalDistance= d1+d2;
     print("Total Distance: ${totalDistance._distance} kms");
+    print("Distance 1: ${d1.kms}kms");
+    print("Distance 2: ${d2.kms}kms");
  
 }
+ 
+
